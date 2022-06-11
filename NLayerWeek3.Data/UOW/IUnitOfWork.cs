@@ -10,6 +10,6 @@ namespace NLayerWeek3.Data.UOW
     {
         Task CommitAsync();
         void Commit();
-
+         void Dispose();
     }
 }

@@ -23,5 +23,12 @@ namespace NLayerWeek3.Data.UOW
         {
             await _context.SaveChangesAsync();
         }
+
+             public void Dispose()
+        {
+            _context.Dispose();
+            GC.SuppressFinalize(this);
+        }
+
     }
 }
