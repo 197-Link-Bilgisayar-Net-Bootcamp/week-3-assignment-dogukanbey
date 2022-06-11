@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayerWeek3.API", "NLayerWeek3.API\NLayerWeek3.API.csproj", "{D3B2581F-CA43-41DE-A4DC-3FCEB750C18B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayerWeek3.Data", "NLayerWeek3.Data\NLayerWeek3.Data.csproj", "{6B900289-322A-4717-A560-C81B060A10B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayerWeek3.Services", "NLayerWeek3.Services\NLayerWeek3.Services.csproj", "{185636BB-4AEA-416A-9DC3-2FACF7024BDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database Scripts", "Database Scripts", "{F01E4187-41B4-4D16-AF99-B01FC520F665}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\Desktop\Database.sql = ..\..\..\..\..\..\Desktop\Database.sql
+		fn_price_calculate.sql = fn_price_calculate.sql
+		sp_finished_product.sql = sp_finished_product.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3B2581F-CA43-41DE-A4DC-3FCEB750C18B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B2581F-CA43-41DE-A4DC-3FCEB750C18B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B2581F-CA43-41DE-A4DC-3FCEB750C18B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B2581F-CA43-41DE-A4DC-3FCEB750C18B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B900289-322A-4717-A560-C81B060A10B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B900289-322A-4717-A560-C81B060A10B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B900289-322A-4717-A560-C81B060A10B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B900289-322A-4717-A560-C81B060A10B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{185636BB-4AEA-416A-9DC3-2FACF7024BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{185636BB-4AEA-416A-9DC3-2FACF7024BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{185636BB-4AEA-416A-9DC3-2FACF7024BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{185636BB-4AEA-416A-9DC3-2FACF7024BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {342250D5-4E86-4C3E-B66D-3A0AF7FDDFDC}
+	EndGlobalSection
+EndGlobal
