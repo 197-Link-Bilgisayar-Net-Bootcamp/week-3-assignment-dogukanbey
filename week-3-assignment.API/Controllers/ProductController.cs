@@ -13,10 +13,13 @@ namespace week_3_assignment.API.Controllers
     public class ProductController : ControllerBase
     {
 
-        
+        // mapping for entity to dto conversion (or reverse)
         private readonly IMapper _mapper;
- 
+
+        // reach database object for controller
         private readonly IProductService _service;
+        
+        
         public ProductController(IMapper mapper, IProductService productService)
         {
 
@@ -29,7 +32,7 @@ namespace week_3_assignment.API.Controllers
 
 
 
-
+        // Get All Products
         /// GET api/products
         [HttpGet]
         public async Task<IActionResult> All()
@@ -40,7 +43,7 @@ namespace week_3_assignment.API.Controllers
 
 
  
-
+        //Get a Product by ID
         // GET /api/products/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
@@ -52,11 +55,10 @@ namespace week_3_assignment.API.Controllers
         }
 
 
+        // Insert a Product to Database
         [HttpPost]
         public async Task<IActionResult> Add(ProductDto productDto)
         {
-         
-
 
             var product = await _service.AddAsync(_mapper.Map<Product>(productDto));
             var productsDto = _mapper.Map<ProductDto>(product);
@@ -68,6 +70,8 @@ namespace week_3_assignment.API.Controllers
         
 
 
+
+        //Updating a Product
         [HttpPut]
         public async Task<IActionResult> Update(ProductDto productDto)
         {
@@ -82,7 +86,7 @@ namespace week_3_assignment.API.Controllers
 
 
 
-
+        //Get a Product by Id
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

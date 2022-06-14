@@ -27,8 +27,8 @@ namespace week_3_assignment.API.Controllers
         }
 
 
-
-        /// GET api/products
+        // Get all categories
+        /// GET api/categories
         [HttpGet]
         public async Task<IActionResult> All()
         {
@@ -38,8 +38,8 @@ namespace week_3_assignment.API.Controllers
 
 
 
-
-        // GET /api/products/5
+        // Get a Category by Id 
+        // GET /api/categories/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
@@ -50,22 +50,20 @@ namespace week_3_assignment.API.Controllers
         }
 
 
+
+        //Add a Category
         [HttpPost]
         public async Task<IActionResult> Add(CategoryDto categoryDto)
         {
-
-
-
             var category = await _service.AddAsync(_mapper.Map<Category>(categoryDto));
             var productsDto = _mapper.Map<CategoryDto>(category);
-
-
             return Ok();
 
         }
 
 
 
+        //Update a Category
         [HttpPut]
         public async Task<IActionResult> Update(CategoryDto categoryDto)
         {
@@ -80,7 +78,7 @@ namespace week_3_assignment.API.Controllers
 
 
 
-
+        // Delete a Category
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {

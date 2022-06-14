@@ -7,6 +7,7 @@ namespace week_3_assignment.Service.Mapping
 {
     public class MapProfile : Profile
     {
+        //mapping for dto - entity conversion
         public MapProfile()
         {
             CreateMap<Product, ProductDto>().ReverseMap();

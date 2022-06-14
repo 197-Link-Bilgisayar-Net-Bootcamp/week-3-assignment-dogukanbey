@@ -6,7 +6,10 @@ namespace week_3_assignment.Data.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
+        //getting database object
         protected readonly AppDbContext _context;
+
+        //setting for a entity
         private readonly DbSet<T> _dbSet;
 
         public GenericRepository(AppDbContext context)

@@ -16,13 +16,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Dependency Injections
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IProductFeatureService, ProductFeatureService>();
 
+
 builder.Services.AddAutoMapper(cfg => cfg.AddProfile<MapProfile>());
+
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
