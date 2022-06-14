@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using week_3_assignment.Data.Repositories;
-using week_3_assignment.Data.UOW;
+using week_3_assignment.Data.UnitOfWork;
  
 
 namespace week_3_assignment.Services.Services

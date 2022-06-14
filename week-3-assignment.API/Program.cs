@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using week_3_assignment.Data;
 using week_3_assignment.Data.Repositories;
-using week_3_assignment.Data.UOW;
+using week_3_assignment.Data.UnitOfWork;
 using week_3_assignment.Service.Mapping;
 using week_3_assignment.Service.Services;
 using week_3_assignment.Services.Services;

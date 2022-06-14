@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using week_3_assignment.Data.Models;
-using week_3_assignment.Data.UOW;
+using week_3_assignment.Data.UnitOfWork;
 using AutoMapper;
 using week_3_assignment.Service.Services.Dtos;
 using week_3_assignment.Service.Services;

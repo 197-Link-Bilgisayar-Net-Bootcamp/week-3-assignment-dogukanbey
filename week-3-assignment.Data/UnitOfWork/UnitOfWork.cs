@@ -1,8 +1,8 @@
 ﻿using week_3_assignment.Data.Models;
 using week_3_assignment.Data.Repositories;
-using week_3_assignment.Data.UOW;
+using week_3_assignment.Data.UnitOfWork;
 
-namespace week_3_assignment.Data.UOW
+namespace week_3_assignment.Data.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {
